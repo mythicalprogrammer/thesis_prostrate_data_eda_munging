@@ -31,4 +31,4 @@ result[[1]]$`Pr(>F)`[[1]]
 # variable selection (drop all the insignificant ones)
 keep_pred[[j]] <- "state"
 GDS_anova <- GDS[,names(GDS) %in% keep_pred]
-write.csv(GDS, file = "cleaned_data/GDS1390_after_anova.csv", row.names=FALSE)
+write.csv(GDS_anova, file = "cleaned_data/GDS1390_after_anova.csv", row.names=FALSE)

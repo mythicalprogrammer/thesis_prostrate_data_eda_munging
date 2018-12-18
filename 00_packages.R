@@ -13,5 +13,5 @@ ipak <- function(pkg){
 }
 
 # usage
-packages <- c("readr", "missRanger")
+packages <- c("readr")
 ipak(packages)
