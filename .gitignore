@@ -38,3 +38,4 @@ rsconnect/
 
 # ignore raw data
 raw_data/
+cleaned_data/
