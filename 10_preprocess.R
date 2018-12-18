@@ -16,8 +16,10 @@ length(colnames(GDS)) == length(GDS_data[,2])
 
 # set the col names after transposing
 # ( cannot use column 2 because last few have same name and weird value #NAME?)
-any(is.na(GDS_data[,1]))
+any(is.na(GDS_data[,1])) # make sure there are no NA column names
+length(unique(GDS_data[,1])) == nrow(GDS_data) # make sure all col names unique
 colnames(GDS) <- GDS_data[,1]
+
 
 # check if there is any NA
 check2 <- c(1,NA,2)
